@@ -244,7 +244,12 @@ body {
   color: #a685e2;
   font-size: 35px;
 }
-
+.fade-first{
+  transition-duration: 2s !important;
+}
+.fade-next{
+  transition-duration: 3s !important;
+}
 /*================================ banner ===================================*/
 .banner-wrapper{
   margin-top: 75px;
