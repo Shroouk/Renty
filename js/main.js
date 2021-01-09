@@ -9,3 +9,7 @@ $(window).scroll(function(){
       $('.nav-dropdown-btn img').attr('src','imgs/user-icon.png');
   }
 });
+
+AOS.init({
+  duration: 1200,
+})
