@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Login/SignUp</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+<div class="form-container">
+  <div class="message signup">
+    <div class="btn-wrapper">
+      <img class="form-logo" src="imgs/logo.png">
+      <button class="button" id="signup">Sign Up</button>
+      <button class="button" id="login"> Login</button>
+    </div>
+  </div>
+  <div class="form form--signup">
+    <div class="form--heading"><h3>Welcome! Sign Up</h3></div>
+    <form class="login-form" autocomplete="off">
+      <input class="mainInput" type="text" required placeholder="First Name">
+      <input class="mainInput" type="text" placeholder="Last Name">
+      <input class="mainInput" type="email" placeholder="Email">
+      <span class="btn-show-pass show-pass "> <i class="fa fa-eye" aria-hidden="true"></i> </span>
+      <input class="mainInput password" type="password" placeholder="Password">
+
+      <button class="button">Sign Up</button>
+      <div class="divider">Or</div>
+      <div class="btn-group">
+        <div class="gmail-btn">
+          <img src="imgs/google-logo.png" alt="Gmail">
+          <span>Sign up with Gmail</span>
+        </div>
+        <div class="facebook-btn">
+          <img src="imgs/facebook-logo.png"  alt="Facebook">
+          <span>Sign up with Facebook</span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="form form--login">
+    <div class="form--heading"><h3>Welcome back! </h3></div>
+    <form class="login-form" autocomplete="off">
+      <input class="mainInput" type="text" placeholder="Email">
+      <span class="btn-show-pass show-pass "> <i class="fa fa-eye" aria-hidden="true"></i> </span>
+      <input class="mainInput" type="password" placeholder="Password">
+      <button class="button">Login</button>
+
+      <div class="divider2">Or</div>
+      <div class="btn-group">
+        <div class="gmail-btn">
+          <img src="imgs/google-logo.png" alt="Gmail">
+          <span>Log in with Gmail</span>
+        </div>
+        <div class="facebook-btn">
+          <img src="imgs/facebook-logo.png"  alt="Facebook">
+          <span>Log in with Facebook</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js'></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
