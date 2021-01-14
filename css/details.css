@@ -66,9 +66,6 @@ body {
     color: var(--purple1);
 }
 
-
-
-
 .details-container{
   margin-top: 8rem!important;
 }
@@ -94,6 +91,15 @@ body {
 }
 .carousel-indicators .active img{
   border: 2px solid var(--purple1);
+}
+
+@media (max-width: 767.98px){
+  .carousel-item img{
+    height: 390px;
+  }
+  .carousel-indicators li img{
+    height: 100px;
+  }
 }
 
 /*========================= details =======================================*/
