@@ -70,6 +70,24 @@ body {
   margin-top: 8rem!important;
 }
 
+
+/*========================== edit form modal  ===============================*/
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 750px !important;
+    margin: 1.75rem auto;
+}
+}
+
+.btn-save{
+    background: linear-gradient(45deg, var(--logo), var(--purple1));
+    color: white;
+}
+.btn-save:hover{
+  background-color:var(--logo);
+    color: white;
+}
+
 /*==================== posts image section ================================*/
 .carousel-item img{
   height: 450px;
@@ -103,6 +121,18 @@ body {
 }
 
 /*========================= details =======================================*/
+.edit-post-menu{
+  left:-5rem !important;
+}
+.dropdown-dots{
+  color: var(--purple1);
+  font-size: 20px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #a685e2;
+}
+
+
 .details-tittle{
   font-family:var(--fontheading);
   color: var(--purple1);
@@ -151,19 +181,30 @@ body {
     color: #555555;
 }
 
-.badge-secondary {
-    color: #3e474a;
-    background-color: #dddddd;
-    padding: 0.75em 1em;
-    margin-bottom: 10px;
-}
-.badge-secondary i{
-  color: var(--purple1);
-}
 
+/* more filters section */
+
+.more-filters-list .list-group-item {
+    padding: .75rem 1.25rem !important;
+    border: 0 !important;
+}
 .text-end{
   text-align: end;
 }
+.notavailable{
+  text-decoration: line-through;
+}
+.notavailable img{
+  opacity: 50%;
+}
+.filter-img{
+  width: 25px;
+  margin-right: 5px;
+}
+
+
+
+
 .rent-btn {
     background: linear-gradient(45deg, var(--logo), var(--purple1));
     color: #fff;
@@ -199,6 +240,47 @@ body {
 .agent-link:hover span{
     color: var(--purple1);
 }
+
+/* user rating */
+/* .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+} */
+.enter-rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.enter-rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.enter-rating:not(:checked) > label:before {
+    content: '★ ';
+    /* font-family: FontAwesome;
+    content: "\f005"; */
+}
+.enter-rating > input:checked ~ label {
+    color: #ffa500;
+}
+.enter-rating:not(:checked) > label:hover,
+.enter-rating:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.enter-rating > input:checked + label:hover,
+.enter-rating > input:checked + label:hover ~ label,
+.enter-rating > input:checked ~ label:hover,
+.enter-rating > input:checked ~ label:hover ~ label,
+.enter-rating > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
 
 /*=========================== comments ======================================*/
 .media img{
