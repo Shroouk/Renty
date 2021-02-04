@@ -121,8 +121,198 @@
     <div class="col-lg-6 ml-auto">
 
       <div class="mb-5">
+        <div class="row">
+        <div class="col-sm-11">
         <h3 class="details-tittle mb-3">Post Tittle</h3>
+        </div>
+        <div class="col-sm-1">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle p-0 pl-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-three-dots-vertical dropdown-dots"></i>
+            </button>
+            <div class="dropdown-menu edit-post-menu" aria-labelledby="dropdownMenuButton">
+              <a type="button" class="dropdown-item btn btn-edit-post" data-toggle="modal" data-target="#exampleModal">
+              <i class="bi bi-pencil-square mr-2"></i> Edit Post
+              </a>
+
+              <a class="dropdown-item" href="#"><i class="bi bi-trash mr-2"></i> Delete Post</a>
+            </div>
+          </div>
+
+          <!-- edit post form -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Edit Post</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+          <!-- form content -->
+          <form>
+          <div class="form-card p-3">
+
+              <div class="form-group">
+                <label class="label">Tittle</label>
+                <input type="text" class="postInput form-control" name="tittle"  value="Create a tittle for your listing">
+              </div>
+              <div class="form-group">
+                <label class="label">Address</label>
+                <input type="text" class="postInput form-control" name="address"  value="Don St, Brooklyn, New York.">
+              </div>
+
+              <div class="form-group">
+                 <label class="label">Description</label>
+                 <textarea class="form-control" rows="3"></textarea>
+               </div>
+
+               <div class="row">
+                 <div class="col-md">
+                   <div class="form-group">
+                   <label class="label">Category</label>
+                   <select class="form-control">
+                     <option>Entire Place</option>
+                     <option>Single Room</option>
+                     <option selected>Shared Room</option>
+                   </select>
+                 </div>
+                 </div>
+                 <div class="col-md">
+                   <div class="form-group">
+                   <label class="label">Guests</label>
+                   <input type="number" min="1" class="postInput form-control" name="guests" value="5">
+                 </div>
+                 </div>
+               </div>
+
+               <div class="row">
+                 <div class="col-md">
+                   <div class="form-group">
+                   <label class="label">Bedrooms</label>
+                   <input type="number" min="1" class="postInput form-control" name="bedrooms" value="3" >
+                 </div>
+                 </div>
+                 <div class="col-md">
+                   <div class="form-group">
+                   <label class="label">Bathrooms</label>
+                   <input type="number" min="1" class="postInput form-control" name="bathrooms" value="2" >
+                 </div>
+                 </div>
+               </div>
+
+               <!-- more amenities -->
+
+               <div class="row mt-3">
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" checked><span class="ml-3"> Wifi </span>
+                       </label>
+                   </div>
+
+                   </div>
+                 </div>
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" checked><span class="ml-3"> TV </span>
+                       </label>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+
+               <div class="row">
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" ><span class="ml-3"> Elevator </span>
+                       </label>
+                   </div>
+                   </div>
+                 </div>
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" ><span class="ml-3"> Air-Condition </span>
+                       </label>
+                   </div>
+                   </div>
+                 </div>
+               </div>
+
+
+               <div class="row">
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" ><span class="ml-3"> Fireplace </span>
+                       </label>
+                   </div>
+                   </div>
+                 </div>
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" checked><span class="ml-3"> Private Enterance </span>
+                       </label>
+                   </div>
+                   </div>
+                 </div>
+               </div>
+
+
+               <div class="row">
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" ><span class="ml-3"> Pets </span>
+                       </label>
+                   </div>
+                   </div>
+                 </div>
+                 <div class="col-md">
+                   <div class="form-group">
+                     <div class="form-check" >
+                       <label class="form-check-label">
+                         <input class="checkbox" type="checkbox" ><span class="ml-3"> Smoking Allawed </span>
+                       </label>
+                   </div>
+                   </div>
+                 </div>
+               </div>
+
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-save btn-default">Save changes</button>
+          </div>
+
+        </form>
+          <!-- end of form content -->
+          </div>
+
+          </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
         <h4 class="price">$ 149.99</h4>
+
+
 
       <div class="row">
         <div class="col-sm-7">
@@ -155,23 +345,29 @@
         </p>
 
 
-        <div class="more-filters">
-          <span class="badge badge-secondary"><i class="bi bi-check2-circle"></i> Wifi</span>
-          <span class="badge badge-secondary"><i class="bi bi-check2-circle"></i> TV</span>
-          <span class="badge badge-secondary"><i class="bi bi-check2-circle"></i> Private Enterance</span>
-          <span class="badge badge-secondary"><i class="bi bi-check2-circle"></i> Pets</span>
-          <span class="badge badge-secondary"><i class="bi bi-check2-circle"></i> Fireplace</span>
-          <span class="badge badge-secondary"><i class="bi bi-check2-circle"></i> Air-condition</span>
-        </div>
+        <!-- more filters -->
+
+      <div class="more-filters">
+        <ul class="list-group more-filters-list">
+          <li class="list-group-item"><img src="imgs/wifi.svg" class="filter-img"> Wifi</li>
+          <li class="list-group-item"><img src="imgs/tv.svg" class="filter-img"> TV</li>
+          <li class="list-group-item notavailable"><img src="imgs/elevator.svg" class="filter-img"> Elevator</li>
+          <li class="list-group-item"><img src="imgs/door.svg" class="filter-img"> Private Entrance</li>
+          <li class="list-group-item"><img src="imgs/paw-prints.svg" class="filter-img"> Pets</li>
+          <li class="list-group-item"><img src="imgs/air-conditioner.svg" class="filter-img"> Air-condition</li>
+          <li class="list-group-item"><img src="imgs/heater.svg" class="filter-img"> Fireplace</li>
+          <li class="list-group-item notavailable"><img src="imgs/smoking.svg" class="filter-img"> Smoking Allawed</li>
+        </ul>
+      </div>
 
         <div class="container text-end">
         <span><a href="" class="rent-btn btn mt-5">Rent Property <i class="bi bi-arrow-right"></i></a></span>
         </div>
 
-        <div class="divider mt-3"><hr></div>
+
 
         <div>
-          <div class="container mt-5">
+          <!-- <div class="container mt-5">
             <h4 class="contact-agent mb-5">Contact Agent</h4>
             <div class="row">
               <div class="col-sm-4 text-center">
@@ -182,7 +378,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, iure atque sit ratione vitae neque! Laborum voluptate</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -191,9 +387,29 @@
 </div>
 </section>
 
+<section class="contact-agent-sec mb-5">
+
+    <div class="container mt-5 ">
+      <h4 class="contact-agent mb-5 text-center">Contact Agent</h4>
+      <div class="text-center">
+        <img class="agent-img" src="imgs/person1.jpg" >
+      </div>
+
+
+        <div class="text-center ">
+          <a href="profile.html" class="agent-link"><span class="agent-name">Blake Ruiz</span></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, iure atque sit ratione vitae neque! Laborum voluptate</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
 <!--=========================== comments ===================================-->
 
-<section class="comments-container" >
+<section class="comments-container pt-5" >
   <div class="container">
 
   <div class="row">
@@ -253,15 +469,28 @@
       <h3 class="fontheading mb-5">Add a Review</h3>
       <div class="container">
         <div class="review_box">
-								<p class="your-rating">Your Rating:</p>
-                <div class="post-review enter-rating ml-2">
-                  <span class="bi bi-star-fill checked"></span>
-                  <span class="bi bi-star-fill checked"></span>
-                  <span class="bi bi-star-fill checked"></span>
-                  <span class="bi bi-star-fill checked"></span>
-                  <span class="bi bi-star-fill"></span>
+
+
+                <form  class="form-contact form-review mt-3">
+
+                  <!-- rating div -->
+                  <div>
+                  <p class="your-rating">Your Rating:</p>
                 </div>
-                <form action="#/" class="form-contact form-review mt-3">
+                  <div class="post-review enter-rating">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                  </div>
+
+
                   <div class="form-group">
                     <textarea class="form-control different-control w-100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Enter Message"></textarea>
                   </div>
@@ -277,6 +506,8 @@
 
 
 </section>
+
+
 
 
 
