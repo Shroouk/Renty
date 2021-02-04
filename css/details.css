@@ -122,7 +122,7 @@ body {
 
 /*========================= details =======================================*/
 .edit-post-menu{
-  left:-5rem !important;
+  left:-7rem !important;
 }
 .dropdown-dots{
   color: var(--purple1);
@@ -131,7 +131,11 @@ body {
 .dropdown-item.active, .dropdown-item:active {
     background-color: #a685e2;
 }
-
+@media (max-width: 767.98px){
+  .edit-post-menu{
+    left:-4rem !important;
+  }
+}
 
 .details-tittle{
   font-family:var(--fontheading);
