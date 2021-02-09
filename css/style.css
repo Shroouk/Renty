@@ -24,7 +24,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background:  var(--purple1);
+  background:  linear-gradient(45deg, var(--logo), var(--purple1));
   border-radius: 10px;
 }
 
