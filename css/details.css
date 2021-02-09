@@ -310,6 +310,128 @@ body {
   box-shadow: none !important;
     border-color: var(--purple1);
 }
+
+
+
+
+
+
+
+
+/* datepicker */
+.datepicker {
+    background-color: #fff;
+    border: none;
+    border-radius: 0 !important
+}
+
+.datepicker-dropdown {
+    top: 0;
+    left: 0
+}
+
+.datepicker table tr td.today,
+span.focused {
+    border-radius: 50% !important;
+    background-image: linear-gradient(45deg, #bd71d2b8, #9363ea70);
+}
+
+.datepicker table tr td.today.range {
+    background-image: linear-gradient(#eeeeee, #eeeeee) !important;
+    border-radius: 0 !important
+}
+thead tr:nth-child(3) th {
+    font-weight: bold !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--purple1);
+}
+
+.dow,
+.old-day,
+.day,
+.new-day {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 0px !important;
+}
+
+.old-day:hover,
+.day:hover,
+.new-day:hover,
+.month:hover,
+.year:hover,
+.decade:hover,
+.century:hover {
+    border-radius: 50% !important;
+    background-color: #eee;
+}
+.active {
+    border-radius: 50% !important;
+    background-image: linear-gradient(45deg, var(--logo), var(--purple1)) !important;
+    color: #fff !important
+}
+
+.range-start,
+.range-end {
+    border-radius: 50% !important;
+    background-image: linear-gradient(45deg, var(--logo), var(--purple1)) !important;
+}
+
+.prev,
+.next,
+.datepicker-switch {
+    border-radius: 0 !important;
+    padding: 10px 10px 10px 10px !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8
+}
+.prev:hover,
+.next:hover,
+.datepicker-switch:hover {
+    background-color: inherit !important;
+    opacity: 1
+}
+
+.btn-black {
+    background-color: #37474F !important;
+    color: #fff !important;
+    width: 100%
+}
+
+.btn-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
+.datepicker-dropdown{
+  -webkit-top:754px !important;
+  -o-top:699px !important;
+  top:699px !important;
+  box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px !important;
+}
+.datepicker {
+    padding: 25px;
+}
+
+.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+  background-image: linear-gradient(45deg, #955ba5b3, #a685e2b3);
+  }
+  .today:hover{
+    background-color: var(--purple1) !important;
+  }
+  .form-control[readonly] {
+      background-color: transparent !important;
+  }
+
+  @media (max-width:768px) {
+    .datepicker-dropdown{
+      top:744px !important;
+    }
+  }
+
+
 /*========================== footer =========================================*/
 .footer-area {
     padding: 120px 0px 60px;
