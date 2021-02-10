@@ -12,6 +12,25 @@
 body {
   font-family:var(--font);
 }
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8080808a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  linear-gradient(45deg, var(--logo), var(--purple1));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:  var(--logo);
+}
 
 .btn:focus {
     outline: 0;
@@ -405,9 +424,6 @@ thead tr:nth-child(3) th {
     background-color: #000 !important
 }
 .datepicker-dropdown{
-  -webkit-top:754px !important;
-  -o-top:699px !important;
-  top:750px !important;
   box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
     border-radius: 5px !important;
 }
