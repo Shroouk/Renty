@@ -17,28 +17,77 @@
     <link rel="stylesheet" href="css/post.css">
   </head>
   <body>
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-11 col-sm-9 col-md-7 col-lg-9 col-xl-9 text-center p-0 mt-3 mb-2">
-      <a href="index.html"><img src="imgs/logo.png" class="logo mb-3"><a/>
-      <h2 class="heading">Tell Us About Your Place</h2>
+    <!--======================= navebar =======================================-->
+  <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top py-3">
+          <div class="container"><a href="index.html" class="navbar-brand"><img src="imgs/logo.png" class="nav-logo mr-1" alt="Renty logo">Renty</a>
+              <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
 
+              <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                  <ul class="navbar-nav ml-auto">
+                      <!-- <li class="nav-item active"><a href="#" class="nav-link text-uppercase">Home <span class="sr-only">(current)</span></a></li> -->
 
-<!--=============================== progressbar =============================-->
-      <ul class="progressbar pl-0 mb-0 mt-5" id="progressbar">
-          <li class="description active" id="description"><strong>Description</strong></li>
-          <li class="amenities" id="amenities"><strong>Amenities</strong></li>
-          <li class="images" id="images"><strong>Images</strong></li>
-          <li class="confirm" id="confirm"><strong>Finish</strong></li>
-      </ul>
-      </div>
-      </div>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle p-0 pl-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="imgs/ring-notification2.svg" class="notification-img">
+                          </button>
+                          <div class="dropdown-menu  notification-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="imgs/user-profile.svg" class="nav-dropdown-img"></button>
+                          <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="contact.html">Contact Us</a>
+                            <a class="dropdown-item" href="#">Help</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                          </div>
+                        </div>
+                      </li>
+
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <div class="background-wrapper">
+    <div class="heading-text mt-5 ml-5">
+      <h2 class="bg-heading">Tell Us About Your Place</h2>
+      <p>To get started, Fill all form fields to go to next step</p>
+    </div>
+
+    <div class="container-fluid">
+
 
 <!--=============================== post form =============================-->
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-end">
             <div class="col-11 col-sm-9 col-md-7 col-lg-7 col-xl-7 text-center p-0 mt-3 mb-2">
+
+
                 <div class="form-card-wrapper card p-4  mt-3 mb-3">
+
+                  <div class="row justify-content-center">
+                    <div class="col-11 col-sm-9 col-md-7 col-lg-9 col-xl-9 text-center p-0 mt-3 mb-2">
+
+                  <!--=============================== progressbar =============================-->
+                      <ul class="progressbar pl-0 mb-0 mt-5" id="progressbar">
+                          <li class="description active" id="description"><strong>Description</strong></li>
+                          <li class="amenities" id="amenities"><strong>Amenities</strong></li>
+                          <li class="images" id="images"><strong>Images</strong></li>
+                          <li class="confirm" id="confirm"><strong>Finish</strong></li>
+                      </ul>
+                      </div>
+                      </div>
 
                     <form class="post-form" id="msform">
 <!--================================= fieldsets =============================-->
@@ -280,6 +329,150 @@
 
 
 </div>
+  </div>
+
+
+
+  <div class="container mt-5">
+        <div class="col-12 text-center aos-init aos-animate" data-aos="fade-up">
+            <h2 class="content-tittle mt-lg-5">Hosting in 3 steps</h2>
+          </div>
+
+          <div class="container mt-5">
+
+          <div class="row aos-init aos-animate" data-aos="fade-up">
+            <div class="col-lg-4">
+              <div class="row justify-content-center">
+               <img class="post-form-img" src="imgs/post3.svg">
+              </div>
+              <div class="row justify-content-center">
+                <h4 class="post-form-txt">List your space for free</h4>
+              </div>
+              <div class="row text-center">
+                <p>Describe your place to guests,fist type a tittle to attract people to your post and tell us about your property by filling all form fields to choose your own schedule, prices,... .</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row justify-content-center">
+               <img class="post-form-img" src="imgs/post2.svg">
+              </div>
+              <div class="row justify-content-center">
+                <h4 class="post-form-txt">Select the special amenities</h4>
+              </div>
+              <div class="row text-center">
+                <p>If your place includes any special amenities please select them to make people know more about your place.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row justify-content-center">
+               <img class="post-form-img" src="imgs/post1.svg">
+              </div>
+              <div class="row justify-content-center">
+                <h4 class="post-form-txt">Upload images</h4>
+              </div>
+              <div class="row text-center">
+                <p>Finally please upload four images of your place, the first image you will upload will appear in your post and all images will be in your property details.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="row mt-5 mb-5 earn">
+  <h2 class="ml-5">Ready to earn?</h2>
+</div>
+
+        <div class="col-12 mt-5 text-center aos-init aos-animate" data-aos="fade-up">
+            <h2 class="content-tittle mt-lg-5">We’ve got you covered</h2>
+          </div>
+
+          <div class="container mt-5">
+
+          <div class="row mb-5 aos-init aos-animate" data-aos="fade-up">
+            <div class="col-lg-6 text-center pr-5 pl-5">
+              <p>We know it’s a priority to trust the people staying in your home. Renty allows you to set strict requirements for who can book and to get to know guests before their stay.</p>
+              <p>If something does come up, though, we have your back. With our Host Guarantee covering property damage and our Host Protection Insurance for liability, you’re supported as a host throughout.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-2">
+              <span class="check mr-3"><i class="bi bi-check2-circle"></i></span>
+              <span class="txt">Ability to require government ID before booking</span>
+              </div>
+              <div class="row mb-2">
+              <span class="check mr-3"><i class="bi bi-check2-circle"></i></span>
+              <span class="txt">House Rules guests must agree to</span>
+              </div>
+              <div class="row mb-2">
+              <span class="check mr-3"><i class="bi bi-check2-circle"></i></span>
+              <span class="txt">Chance to read reviews from past trips</span>
+              </div>
+              <div class="row mb-2">
+              <span class="check mr-3"><i class="bi bi-check2-circle"></i></span>
+              <span class="txt">24/7 global customer support</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--=========================== footer =====================================-->
+          <footer class="footer">
+            <div class="footer-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm col-lg-4 col-8">
+                    <div class="footer-contect-wrapper">
+                      <h3 class="footer-heading mb-4">Our Mission</h3>
+                      <p>
+                        So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us lan Gathering thing us land years living.
+                        So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col col-lg-2 col-4">
+                     <div class="footer-contect-wrapper">
+                       <h4 class="footer-heading mb-4">Quick Links</h4>
+                       <ul class="list-unstyled footer-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                          </ul>
+                     </div>
+                   </div>
+                   <div class="col col-lg-3 col-8" >
+                     <div class="footer-contect-wrapper">
+                       <h4 class="footer-heading mb-4">Contact Info</h4>
+                       <ul class="list-unstyled contact-list">
+                          <li class="contact-item phone"><i class="bi bi-telephone-fill mr-3"></i> +2 392 3929 210</li>
+                          <li class="contact-item email"><i class="bi bi-envelope-fill mr-3"></i> renty@domain.com</li>
+                        </ul>
+                     </div>
+
+                   </div>
+                   <div class="col col-lg-3 col-4">
+                     <div class="footer-contect-wrapper">
+                       <h4 class="footer-heading mb-2">Follow Us</h4>
+                       <span><i class="bi bi-facebook ml-3 mr-3"></i></span>
+                       <span><i class="bi bi-twitter mr-3"></i></span>
+                       <span><i class="bi bi-google"></i></span>
+                     </div>
+                   </div>
+                </div>
+
+                <div class="row text-center copyright">
+                  <span>Copyright &copy; 2021 All rights reserved | Made with <i class="bi bi-heart-fill mr-1 ml-1"></i> by ITI Aswan Mearn Stack</span>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+
+
+
+
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
