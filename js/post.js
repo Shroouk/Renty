@@ -86,3 +86,9 @@ $(document).on('click', '.upload-field', function(){
 $(document).on('change', '.input-file', function(){
   $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
 });
+
+
+
+AOS.init({
+  duration: 1200,
+})
