@@ -179,19 +179,61 @@
     </div>
 
 <!--=================== posts ==========================================-->
-    <div class="col-lg-8 ml-auto">
-      <!-- posts section -->
 
-        <div class="posts-wrapper">
-          <!-- start post -->
+    <div class="col-lg-8 ml-auto">
+
+
+
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#mypost" role="tab" aria-controls="mypost" aria-selected="true">My Posts</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="cart-tab" data-toggle="tab" href="#mycart" role="tab" aria-controls="mycart" aria-selected="false">My Booking Cart</a>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="myTabContent">
+<!--=================== posts will be showen here ===========================-->
+        <div class="tab-pane fade show active" id="mypost" role="tabpanel" aria-labelledby="home-tab">
+          <!-- posts section -->
+
+            <div class="posts-wrapper">
+              <!-- start post -->
+              <div class="d-block d-md-flex listing-horizontal">
+                <img class="img d-block post-img" src="imgs/p1.jpg">
+                <span class="status">Available</span>
+                <div class="post-content align-self-center pl-4 pt-4 pb-4 pr-4">
+                  <h3 class="post-tittle">first post</h3>
+                  <p>Don St, Brooklyn, New York</p>
+                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.
+                  </p>
+                  <div class="post-review">
+                    <span class="bi bi-star-fill checked"></span>
+                    <span class="bi bi-star-fill checked"></span>
+                    <span class="bi bi-star-fill checked"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="review-numder ml-1">(3 Reviews)</span>
+
+                  </div>
+                  <div class="container text-end">
+                  <span><a href="details.html" class="details-btn btn btn-outline mt-3">View Details <i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+              </div>
+              <!-- end post -->
+
+          <!-- more posts for testing Ui (will be deleted) -->
           <div class="d-block d-md-flex listing-horizontal">
-            <img class="img d-block post-img" src="imgs/p1.jpg">
+            <img class="img d-block post-img" src="imgs/p2.jpg">
             <span class="status">Available</span>
             <div class="post-content align-self-center pl-4 pt-4 pb-4 pr-4">
               <h3 class="post-tittle">first post</h3>
               <p>Don St, Brooklyn, New York</p>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.
               </p>
               <div class="post-review">
                 <span class="bi bi-star-fill checked"></span>
@@ -200,63 +242,113 @@
                 <span class="bi bi-star-fill"></span>
                 <span class="bi bi-star-fill"></span>
                 <span class="review-numder ml-1">(3 Reviews)</span>
-
               </div>
               <div class="container text-end">
               <span><a href="details.html" class="details-btn btn btn-outline mt-3">View Details <i class="bi bi-arrow-right"></i></a></span>
               </div>
             </div>
           </div>
-          <!-- end post -->
+          <div class="d-block d-md-flex listing-horizontal">
+            <img class="img d-block post-img" src="imgs/p3.jpg">
+            <span class="status">Available</span>
+            <div class="post-content align-self-center pl-4 pt-4 pb-4 pr-4">
+              <h3 class="post-tittle">first post</h3>
+              <p>Don St, Brooklyn, New York</p>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="post-review">
+                <span class="bi bi-star-fill checked"></span>
+                <span class="bi bi-star-fill checked"></span>
+                <span class="bi bi-star-fill checked"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="review-numder ml-1">(3 Reviews)</span>
+              </div>
+              <div class="container text-end">
+              <span><a href="details.html" class="details-btn btn btn-outline mt-3">View Details <i class="bi bi-arrow-right"></i></a></span>
+              </div>
+            </div>
 
-      <!-- more posts for testing Ui (will be deleted) -->
-      <div class="d-block d-md-flex listing-horizontal">
-        <img class="img d-block post-img" src="imgs/p2.jpg">
-        <span class="status">Available</span>
-        <div class="post-content align-self-center pl-4 pt-4 pb-4 pr-4">
-          <h3 class="post-tittle">first post</h3>
-          <p>Don St, Brooklyn, New York</p>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.
-          </p>
-          <div class="post-review">
-            <span class="bi bi-star-fill checked"></span>
-            <span class="bi bi-star-fill checked"></span>
-            <span class="bi bi-star-fill checked"></span>
-            <span class="bi bi-star-fill"></span>
-            <span class="bi bi-star-fill"></span>
-            <span class="review-numder ml-1">(3 Reviews)</span>
           </div>
-          <div class="container text-end">
-          <span><a href="details.html" class="details-btn btn btn-outline mt-3">View Details <i class="bi bi-arrow-right"></i></a></span>
-          </div>
+
+
+
+            </div>
         </div>
+
+
+
+
+
+<!--========================= booking will be showen here ====================-->
+        <div class="tab-pane fade" id="mycart" role="tabpanel" aria-labelledby="cart-tab">
+
+          <!-- posts section -->
+
+            <div class="posts-wrapper">
+              <!-- start post -->
+              <div class="d-block d-md-flex listing-horizontal">
+                <img class="img d-block post-img" src="imgs/p1.jpg">
+                <div class="post-content align-self-center pl-4 pt-4 pb-4 pr-4">
+                  <h3 class="post-tittle">first post</h3>
+                  <p>Don St, Brooklyn, New York</p>
+                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.
+                  </p>
+                  <div class="post-review">
+                    <span class="bi bi-star-fill checked"></span>
+                    <span class="bi bi-star-fill checked"></span>
+                    <span class="bi bi-star-fill checked"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="review-numder ml-1">(3 Reviews)</span>
+
+                  </div>
+                  <div class="container text-end">
+                  <span><a href="details.html" class="details-btn btn btn-outline mt-3">View Details <i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+              </div>
+              <!-- end post -->
+
+            </div>
+
+        </div>
+
+
       </div>
-      <div class="d-block d-md-flex listing-horizontal">
-        <img class="img d-block post-img" src="imgs/p3.jpg">
-        <span class="status">Available</span>
-        <div class="post-content align-self-center pl-4 pt-4 pb-4 pr-4">
-          <h3 class="post-tittle">first post</h3>
-          <p>Don St, Brooklyn, New York</p>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <div class="post-review">
-            <span class="bi bi-star-fill checked"></span>
-            <span class="bi bi-star-fill checked"></span>
-            <span class="bi bi-star-fill checked"></span>
-            <span class="bi bi-star-fill"></span>
-            <span class="bi bi-star-fill"></span>
-            <span class="review-numder ml-1">(3 Reviews)</span>
-          </div>
-          <div class="container text-end">
-          <span><a href="details.html" class="details-btn btn btn-outline mt-3">View Details <i class="bi bi-arrow-right"></i></a></span>
-          </div>
-        </div>
-
-      </div>
 
 
 
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="row text-center">
           <div class="col host-home-linl" >
