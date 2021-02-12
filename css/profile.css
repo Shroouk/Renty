@@ -12,7 +12,25 @@
 body {
   font-family:var(--font);
 }
+/* scrollbar */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8080808a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  linear-gradient(45deg, var(--logo), var(--purple1));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:  var(--logo);
+}
 
 /*===================== navbar =======================================*/
 
@@ -146,6 +164,30 @@ body {
   float: left !important;
 }
 /*=============================== posts =================================== */
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--purple1) !important;
+    background-color: #fff;
+    border-color: transparent !important;
+    border-bottom: 2px solid #a685e2 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6 !important;
+    margin-bottom: 30px !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+    background-color: #a685e229;
+}
+.nav-tabs .nav-link {
+    color: #9c9c9c !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
 .listing-horizontal{
   -webkit-box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
