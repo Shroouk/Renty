@@ -3,11 +3,13 @@
 Website to rent or host a property 
 
 
- live link:  https://shroouk.github.io/Renty/
+ -live link:  https://shroouk.github.io/Renty/
 
- User Interface is designed with HTML5 & CSS3 & Bootstrap & jQuery
+ -UI was designed using AdobeXD
+
+ -User Interface is designed with HTML5 & CSS3 & Bootstrap & jQuery
  
- It includes:-
+ -It includes:-
  
  1- Landing page
  
@@ -23,6 +25,6 @@ Website to rent or host a property
  
  7- Contact Us page
  
-![](imgs/renty .png)
+![](imgs/renty2.png)
 
-![](imgs/contact1.PNG)
+![](imgs/prototype.PNG)
