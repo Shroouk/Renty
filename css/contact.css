@@ -1,0 +1,125 @@
+/* Colors & fonts */
+:root {
+    --purple1: #a685e2;
+    --purple2: #6155a6;
+    --logo:#955ba5;
+    --grey: #C3C3D8;
+
+    --font:'Quicksand', sans-serif;
+    --fontheading:'Lobster', sans-serif;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+body {
+  font-family:var(--font);
+}
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8080808a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  linear-gradient(45deg, var(--logo), var(--purple1));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:  var(--logo);
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent;
+}
+
+
+.contact-heading{
+  font-family: var(--fontheading);
+  color: var(--purple1);
+}
+.contact-heading:after {
+    position: absolute;
+    content: "";
+    top: 50px;
+    width: 80px;
+    height: 3px;
+    background: var(--purple1);
+    left: calc(50% - 40px);
+    /* margin: 0px -120px; */
+}
+/*======================== contact form =====================================*/
+.form-control:focus{
+  box-shadow: none !important;
+    border-color: var(--purple1) !important;
+}
+.contact-form-wrapper, .contact-info-wrapper{
+  border: none;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px;
+}
+.msg-form-btn {
+  padding: 8px 20px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, var(--logo), var(--purple1));
+    color: #fff;
+    float: right;
+}
+.msg-form-btn:hover{
+  border: 1px solid var(--purple1);
+    color: var(--purple1);
+    background: transparent;
+}
+
+/*============================== contact info  =============================*/
+.contact-info h5{
+  font-weight: 700;
+    color:  #00000094;
+    font-size: 18px;
+}
+.contact-info p i{
+  color: var(--purple1);
+}
+.contact-icon{
+  color: #00000094;
+}
+/*========================== footer =========================================*/
+.footer-area {
+  padding: 55px 0px 20px;
+  background: linear-gradient(45deg, var(--logo), var(--purple1));
+}
+.footer-heading{
+  color: #fff;
+}
+.footer-contect-wrapper p{
+  color: #d0d0d0;
+    width: 85%;
+}
+.footer-list li{
+margin: 7px;
+}
+.footer-list li a{
+  color: #d0d0d0;
+}
+.footer-list li a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.contact-list li{
+  margin: 7px;
+  color: #fff;
+}
+.footer-contect-wrapper span i{
+  color: #d0d0d0;
+}
+.footer-contect-wrapper span i:hover{
+  color: #fff;
+}
+.copyright{
+  justify-content: center;
+  margin-top: 55px;
+  color: #fff;
+}
